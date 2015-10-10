@@ -1,7 +1,7 @@
 
 body,
 html{background-color: #fafcf9;
-     font-family: verdana,arial,sans-serif;
+     font-family: tahoma,arial,sans-serif;
      color: black;
      margin:0;
      padding:0;
@@ -12,11 +12,7 @@ html{background-color: #fafcf9;
 
 #wrapper{ margin: 0 auto 0 auto;
           width:100%;
-          min-width: 700px;
-          background-color: ;
-          -webkit-box-shadow:5px 5px 5px #828282;
-          -moz-box-shadow:5px 5px 5px #828282;
-          box-shadow: 5px 5px 5px #828282;
+          min-width: 700px;        
 }
 
 
@@ -25,23 +21,25 @@ html{background-color: #fafcf9;
   background-color: #fafcf9;
         min-height: 200px;
         max-height: 400px;
-        overflow: hidden;
+       
         display: block;
-        left: 0;
-        width:80%;
+        width:100%;
         float:right;
         padding: 0;
-        margin:0 auto;
         display: block;
         text-align: center;
+        position: relative;
 }
 
 
 img.center {display: inline-block;
               padding: 10px;
+              margin-left: 280px;
+              text-align: center;
               border-radius: 5px;
-
               box-shadow:  5px 5px 5px black;
+              -webkit-box-shadow:5px 5px 5px black;
+          -moz-box-shadow:5px 5px 5px black;
               
               }
 
@@ -61,6 +59,7 @@ nav.vertical{
   overflow: hidden;
   text-align: center;
   background-color: #000000;
+  font-family: tahoma,arial,sans-serif;
 }
 
 nav.vertical > ul {
@@ -80,6 +79,7 @@ nav.vertical > ul > li > a {
   background-image: linear-gradient(135deg, rgb(114, 51, 98), rgb(157, 34, 60));
   border-bottom: 1px solid rgba(255,255,255,.1);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.1);
+  font-family: tahoma,arial,sans-serif;
   color: rgb(255,255,255);
   display: block;
   font-size: 12px;
@@ -114,7 +114,7 @@ padding-top: 10px;}
           width:77%;
           min-width: 750px;    
           position: relative;
-          margin-right: auto;
+          margin-right: 100px;
           margin-left: 300px;
           padding-right: 30px;
           -webkit-box-shadow:5px 5px 5px #828282;
@@ -122,22 +122,32 @@ padding-top: 10px;}
           box-shadow: 5px 5px 5px #828282;
          }
 #content > h1 {text-align: center;
-               background-color: none;
                color: #000000;
-               font-style: bold;
+               font-weight: bold;
               }
 #content >h2 {color:#000000;
 padding-left: 30px;
 font-size: 30px;}              
 #content >h3 {color:rgb(157, 34, 60);
-padding-left: 30px;}              
+
+text-align: center;}              
 #content >h4 {color:rgb(157, 34, 60);
 text-align: center;}
-#content >p {padding-left: 30px;}
+#content >p {padding-left: 30px;
+              padding-right: 30px;}
 #content >ul {float:left;
                 width: 400px;
                 font-size: 24px;
               } 
+#content> #rates {text-align: left;
+                  padding-left: 30px;
+                        }  
+
+#content> #rates >h3 {text-align: left;
+                      padding-left: 30px;
+                    } 
+#content> #rates >ul {padding-left: 60px;}                                             
+
 
 
 .class {padding-left: 300px;
@@ -155,7 +165,7 @@ img.floatLeft {float: left;
                 margin: 20px;
                 padding: 10px;
                 box-shadow: inset #999 4px -4px 2px 0,
-                inset -4px 4px 2px;
+                inset #999 -4px 4px 2px;
 
                 }  
 
@@ -165,7 +175,7 @@ img.floatRight  {float: right;
 
                 padding: 10px;
                 box-shadow: inset #999 4px -4px 2px 0,
-                inset -4px 4px 2px;
+                inset #999 -4px 4px 2px;
                 }
 
 img.circle { float:left;
@@ -174,7 +184,12 @@ img.circle { float:left;
              height:200px;
              width:200px;  
               border-radius: 50%;}
-             
+
+img.results  {float: right;
+                 margin-right: 20px;
+                 margin-bottom: 30px;}
+
+img.challenge {text-align: center;}             
             
               
 
@@ -182,7 +197,7 @@ img.circle { float:left;
 
 table.classes {
   font-size: 12pt;
-  font-family: verdana, arial, sans-serif;
+  font-family: tahoma,arial,sans-serif;
   border-collapse: collapse;
   table-layout: auto;
 }
@@ -191,19 +206,226 @@ table.classes > th, td {
   border: 1px solid #000000;
 }
 
-               
+.day h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}
 
-#footer { width: 100%;
+.day h4 {color:#000000;
+  text-align:center;}
+
+.nutrition { table-layout: fixed;
+              width:100%;
+             }
+
+
+
+.row-step1 {width: 33%
+            } 
+.row-step2{width: 33%
+          }                                         
+.row-step3{width: 33%
+          }
+
+.nutrition th {
+  background: #2dcafb;
+  color: #000000;
+
+}
+.nutrition td,
+.nutrition th {
+  text-align: center;
+  padding: 5px 10px;
+}
+.nutrition tr:nth-child(odd) {
+  background: #cccccc;
+}  
+
+.nutrition ul {text-align: left;}  
+
+
+#diet h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}
+
+
+#diet h3 {color:rgb(157, 34, 60);
+text-align: left;
+padding-left: 30px;} 
+
+#diet h4 {color: #000000;
+text-align: left;
+padding-left: 30px;}
+
+#diet p {text-align: left;
+padding-left: 40px;}
+
+.supplements h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}
+
+.supplements p {text-align: left;
+padding-left: 40px;}
+
+.supplements  ol {margin-left: 40px;}
+
+.supplements h4 {
+text-align: left;
+padding-left: 40px;}
+
+.supplements img {text-align: right;
+padding-right: 30px;}
+
+                                             
+iframe {margin-left: 250px;
+  margin-bottom: 50px;
+      }
+
+.coaches {
+    position:relative;
+    width:40%;
+    overflow:hidden;
+    margin-right:20px;
+    list-style-type:none;
+}
+.coaches  figure {
+    margin:0;
+    padding-left:40px;
+    position:relative;
+    cursor:pointer;
+   
+}
+.coaches  figure img {
+    padding-left: 40px;
+    display:block;
+    position:relative;
+    z-index:10;
+   
+}
+.coaches  figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color:#2dcafb;
+    font-family: tahoma,arial,sans-serif;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.coaches  figure h2 {
+    font-family: tahoma,arial,sans-serif;
+    color:#9d223c;
+    font-size:20px;
+    text-align:center;
+    text-decoration: underline;
+}
+.coaches  figure p {
+    display:block;
+    font-family: tahoma,arial,sans-serif;
+    font-size:12px;
+    line-height:18px;
+    margin:0;
+    color:#9d223c;
+    text-align:center;
+}
+
+.coaches  figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.coaches  figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.coaches  figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+.imgtext {padding-left: 40px;}
+
+img.pics {
+          padding: 10px;
+        
+               }
+#missfit  h2 { color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}   
+
+#bb h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;} 
+
+#murph h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}    
+
+#b4b h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;}       
+
+#halloween h2 {color:rgb(157, 34, 60);
+  font-size: 40px;
+text-align:center;} 
+
+
+
+
+
+
+
+
+
+
+#contact h1 {font-size: 40px;
+color:rgb(157, 34, 60);
+text-align: center;}
+
+#directions h1 {font-size: 40px;
+color:rgb(157, 34, 60);
+text-align: center;}
+
+
+
+#map{ text-align: center;
+  padding-top: 30px;
+
+}  
+
+img #top {
+text-align: center;}             
+
+#footer { position: relative; 
+  width: 100%;
           float:right;
           clear:both;        
           background-color: #000000;
+          font-family: tahoma,arial,sans-serif;
           color: #9d223c;
           font-size: 15px;
           font-style: italic;
           text-align: center;
           padding:10px;
         }
-#footer a {color:#2dcafb;}        
+#footer a {color:#2dcafb;}   
+
+#valid {float: right;}     
 
        
 
